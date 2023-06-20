@@ -25,7 +25,7 @@ will be appended and checked for consistency."><meta name="robots" content="noin
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">bstfun</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="In-development version">0.3.7.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="In-development version">0.5.1.9000</span>
       </span>
     </div>
 
@@ -43,7 +43,7 @@ will be appended and checked for consistency."><meta name="robots" content="noin
   <a href="../news/index.html">News</a>
 </li>
       </ul><ul class="nav navbar-nav navbar-right"><li>
-  <a href="https://github.com/ddsjoberg/bstfun" class="external-link">
+  <a href="https://github.com/MSKCC-Epi-Bio/bstfun" class="external-link">
     <span class="fa fa-github fa-lg"></span>
      
   </a>
@@ -58,7 +58,7 @@ will be appended and checked for consistency."><meta name="robots" content="noin
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Check and Format MRNs</h1>
-    <small class="dont-index">Source: <a href="https://github.com/ddsjoberg/bstfun/blob/HEAD/R/clean_mrn.R" class="external-link"><code>R/clean_mrn.R</code></a></small>
+    <small class="dont-index">Source: <a href="https://github.com/MSKCC-Epi-Bio/bstfun/blob/HEAD/R/clean_mrn.R" class="external-link"><code>R/clean_mrn.R</code></a></small>
     <div class="hidden name"><code>clean_mrn.Rd</code></div>
     </div>
 
@@ -72,28 +72,35 @@ will be appended and checked for consistency.</p>
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">clean_mrn</span><span class="op">(</span><span class="va">x</span>, allow_na <span class="op">=</span> <span class="cn">FALSE</span>, check_unique <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">clean_mrn</span><span class="op">(</span><span class="va">x</span>, allow_na <span class="op">=</span> <span class="cn">FALSE</span>, check_unique <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
     <h2>Arguments</h2>
     <dl><dt>x</dt>
 <dd><p>vector to be converted and checked to MRN</p></dd>
+
+
 <dt>allow_na</dt>
 <dd><p>logical indicating whether <code>NA</code> values are accepted.
 Default is <code>FALSE</code></p></dd>
+
+
 <dt>check_unique</dt>
 <dd><p>Check if MRNs are unique</p></dd>
+
 </dl></div>
     <div id="value">
     <h2>Value</h2>
-    <p>character MRN vector</p>
+    
+
+<p>character MRN vector</p>
     </div>
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="fl">1000</span><span class="op">:</span><span class="fl">1001</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
-<span class="r-in">  <span class="fu">clean_mrn</span><span class="op">(</span><span class="op">)</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fl">1000</span><span class="op">:</span><span class="fl">1001</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span></span>
+<span class="r-in"><span>  <span class="fu">clean_mrn</span><span class="op">(</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] "00001000" "00001001"</span>
 </code></pre></div>
     </div>
@@ -105,11 +112,11 @@ Default is <code>FALSE</code></p></dd>
 
 
       <footer><div class="copyright">
-  <p></p><p>Developed by <a href="http://www.danieldsjoberg.com/" class="external-link">Daniel D. Sjoberg</a>, Jessica A. Lavery, Karissa Whiting.</p>
+  <p></p><p>Developed by Karissa Whiting, <a href="http://www.danieldsjoberg.com/" class="external-link">Daniel D. Sjoberg</a>, Jessica A. Lavery.</p>
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
 </div>
 
       </footer></div>
