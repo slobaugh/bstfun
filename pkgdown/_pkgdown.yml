@@ -58,6 +58,7 @@ reference:
       - here_data
       - cite_r
       - fix_database_error
+      - purrr_when
 
   - title: "High Performance Computing Cluster"
     contents:

@@ -9,6 +9,7 @@ MRNs
 MSK
 MSKCC
 ORCID
+RHSs
 RSPM
 RStudio
 Rmd
@@ -27,6 +28,7 @@ dbeta
 eGFR
 eg
 emmeans
+flavour
 flextable
 ftExtra
 ggplot
@@ -45,8 +47,8 @@ mL
 magick
 mskcc
 ng
+purrr
 ragg
-regressoin
 renv
 repo
 rmd
